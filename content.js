@@ -2,13 +2,13 @@
 window.SITE = {
   nome: "André Vieira da Silva",
   curto: "André Vieira",
-  titulo: "Tech Lead · Senior Software Engineer",
+  titulo: "Especialista de Engenharia de Software",
   local: "Fortaleza, Ceará",
   resumo:
     "Construo backends críticos em Java e Kotlin, com arquitetura hexagonal e orientada a eventos, para o setor financeiro. Fora do expediente, desenho e desenvolvo meus próprios produtos.",
   sobre: [
     "Engenheiro de computação pelo IFCE (2021), com mais de 10 anos em arquitetura distribuída e microsserviços. Passei por projetos financeiros críticos na Unicred, PagBank, PicPay e Banco Original, de PIX regulatório a marketplace de crédito.",
-    "Hoje lidero tecnicamente os sistemas de Cobrança e Emissão da Unicred: governança de microsserviços, migração para Kubernetes, observabilidade e mentoria de times.",
+    "Desde maio de 2026 atuo como Especialista de Engenharia de Software na Sicredi. Antes, liderei tecnicamente os sistemas de Cobrança e Emissão da Unicred: governança de microsserviços, migração para Kubernetes, observabilidade e mentoria de times.",
   ],
   stats: [
     { valor: 10, sufixo: "+", rotulo: "anos de experiência" },
@@ -23,10 +23,16 @@ window.SITE = {
   },
   experiencia: [
     {
+      empresa: "Sicredi",
+      cargo: "Especialista de Engenharia de Software",
+      periodo: "Mai 2026 – presente",
+      atual: true,
+      destaques: [],
+    },
+    {
       empresa: "Unicred do Brasil",
       cargo: "Tech Lead / Especialista Desenvolvedor",
-      periodo: "Abr 2025 – presente",
-      atual: true,
+      periodo: "Abr 2025 – Jan 2026",
       destaques: [
         "Liderança técnica dos sistemas de Cobrança e Emissão.",
         "Governança de microsserviços e migração para Kubernetes.",

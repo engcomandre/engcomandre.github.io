@@ -14,7 +14,7 @@
   const parts = {
     stats: () => S.stats.map((s) => `<div class="stat" data-reveal><b data-count="${s.valor}" data-suffix="${e(s.sufixo)}">0</b><span>${e(s.rotulo)}</span></div>`).join(""),
     atuacao: () => atuacao.map((a, i) => `<article class="work-card" data-reveal><div class="card-index">${pad(i + 1)}</div><div class="card-icon">${a[0]}</div><h3>${e(a[1])}</h3><p>${e(a[2])}</p><span class="card-foot">${e(a[3])}</span></article>`).join(""),
-    xp: () => S.experiencia.map((x) => `<article class="xp-item${x.atual ? " now" : ""}" data-reveal><div class="xp-when"><span class="xp-dot"></span><small>${e(x.periodo)}</small>${x.atual ? "<em>atual</em>" : ""}</div><div class="xp-body"><h3>${e(x.cargo)}</h3><p class="xp-co">${e(x.empresa)}</p><ul>${x.destaques.map((d) => `<li>${e(d)}</li>`).join("")}</ul></div></article>`).join(""),
+    xp: () => S.experiencia.map((x) => `<article class="xp-item${x.atual ? " now" : ""}" data-reveal><div class="xp-when"><span class="xp-dot"></span><small>${e(x.periodo)}</small>${x.atual ? "<em>atual</em>" : ""}</div><div class="xp-body"><h3>${e(x.cargo)}</h3><p class="xp-co">${e(x.empresa)}</p>${x.destaques.length ? `<ul>${x.destaques.map((d) => `<li>${e(d)}</li>`).join("")}</ul>` : ""}</div></article>`).join(""),
     proj: () => S.projetos.map((p, i) => {
       const inner = `<div class="proj-top"><span class="badge ${p.tipo}">${e(FX.tipoRotulo[p.tipo])}</span><span class="proj-id">${pad(i + 1)}</span></div><h3>${e(p.nome)}</h3><p>${e(p.descricao)}</p><div class="chips">${p.stack.map(chip).join("")}</div><div class="proj-foot"><span>${e(p.estado)}</span>${p.link ? "<b>↗</b>" : ""}</div>`;
       return p.link
